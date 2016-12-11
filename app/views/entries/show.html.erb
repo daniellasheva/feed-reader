@@ -1,0 +1,15 @@
+<div class="container">
+  <h2><%= link_to @entry.title, @entry.url %></h2>
+  <i>published on <%= @entry.published %> by <%= @author %></i>
+  <p>
+    <b>Location:</b> <%= @location %> </br>
+    <b>Dates: </b> <%= @first_date%>pm,
+    <%=@second_date %></br>
+    <b>Organizer: </b> <%= @organizer %></br>
+
+    </br>
+  </p>
+
+  <%= button_to "Add to My Events" %> </br>
+  <%= link_to "Back", entries_path %>
+</div>
